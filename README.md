@@ -1,6 +1,6 @@
 # Elemental Tower Survivor — Privacy Policy
 
-The published privacy policy for **Elemental Tower Survivor** (`com.cjgames.elementaltower`).
+The published privacy policy for **Elemental Tower Survivor** (`com.cjgames.elementaltowersurvivor`).
 
 Live at: https://conjod.github.io/elementaltower-privacy/
 
