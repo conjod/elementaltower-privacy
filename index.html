@@ -36,17 +36,21 @@
 
 <h1>Privacy Policy</h1>
 <p class="meta"><strong>Elemental Tower Survivor</strong> &middot; <code>com.cjgames.elementaltowersurvivor</code></p>
-<p class="meta">Last updated: 9 October 2026</p>
+<p class="meta">Last updated: 29 October 2026</p>
 
 <p class="lead">This policy explains what Elemental Tower Survivor collects, why, and how to have it
 deleted. It covers the Android app and the browser version of the game.</p>
 
 <div class="box">
-<p><strong>The short version.</strong> The game has no sign-in screen and no ads. It never asks
-for your name, email address, phone number or location, and it never collects them. What it does
-send is gameplay data — how far you got, which abilities you bought, how smoothly the game ran —
-filed under a nickname the game invents for you and a random anonymous ID, not under anything that
+<p><strong>The short version.</strong> The game has no sign-in screen. It never asks for your
+name, email address, phone number or location, and it never collects them. What it does send is
+gameplay data — how far you got, which abilities you bought, how smoothly the game ran — filed
+under a nickname the game invents for you and a random anonymous ID, not under anything that
 identifies you.</p>
+<p>The Android app has one advert, and it is optional: when your tower falls, you can watch a short
+video to revive. The adverts come from Google AdMob, which collects some information about your
+device to show them (section 7). In the UK, the EEA and Switzerland, Google asks for your consent
+first, and you can refuse.</p>
 </div>
 
 <h2>Who is responsible</h2>
@@ -84,14 +88,17 @@ is stored; a new best overwrites the previous one.</p>
 
 <h3>4. Run records</h3>
 <p>At the end of every run — and as a snapshot if you close the game mid-run — the game submits a
-record of that run. This is used to balance the game and to find performance problems on hardware
-the developer does not own.</p>
+record of that run. If the device is offline, the record is kept on the device and sent the next
+time the game goes online. This is used to balance the game and to find performance problems on
+hardware the developer does not own.</p>
 <p>The record contains gameplay and performance information: your nickname, your anonymous player
 ID, the build of the game you played, the tower you chose, the wave and time you reached, kills,
 which abilities you bought and when, damage and healing per ability, which boss relics you took,
-how the run ended, which towers you have unlocked, how many runs you have finished, a summary of
-frame times and of how much memory the game used during the run, and the same platform label as
-above.</p>
+how the run ended, whether you watched the revive advert (watched, closed early, none available,
+or failed to load, with the error code), whether the genuine-app check in section 8 succeeded (or
+the error it returned), which towers you have unlocked, how many runs you have
+finished, a summary of frame times and of how much memory the game used during the run, and the
+same platform label as above.</p>
 <p>It also contains a few general characteristics of your device, so that slow runs can be grouped
 by the kind of hardware they happened on: the number of processor cores, the approximate amount of
 memory, the screen size and pixel density, and which graphics mode the game ran in. It does not
@@ -118,6 +125,46 @@ right kind of device.</p>
 identifying — into the feedback box. If you do, it will be stored along with the rest of your
 message.</p>
 
+<h2>Adverts and security checks by Google (Android app only)</h2>
+<p>The browser version of the game has no adverts and makes neither of these checks.</p>
+
+<h3>7. The optional revive advert (Google AdMob)</h3>
+<p>When your tower falls, the Android app offers one revive per run. To take it, you watch a short
+video advert. Nothing else in the game shows adverts, and you never have to watch one: declining the
+revive simply ends the run.</p>
+<p>The adverts are provided by Google AdMob. So that an advert is ready when you need it, the app
+starts loading one before each run, which means Google's advertising software contacts
+Google even in runs where you never watch one. Google's software collects:</p>
+<ul>
+  <li>your device's IP address, which may be used to estimate its general location;</li>
+  <li>your interactions with adverts, such as whether one was shown, watched or tapped;</li>
+  <li>diagnostic information, such as app launch time, hangs and energy use;</li>
+  <li>device identifiers: the Android advertising ID and the app set ID.</li>
+</ul>
+<p>Google uses this to show adverts, measure them and prevent fraud. It does so as an independent
+controller, under its own privacy policy: see
+<a href="https://policies.google.com/technologies/partner-sites" rel="noopener">how Google uses
+information from sites or apps that use its services</a>. The developer receives only overall
+figures from AdMob, such as how many adverts were shown, and never information about you.</p>
+<p><strong>Your choices.</strong> In the UK, the European Economic Area and Switzerland, the first
+time you open the app Google's consent form asks whether your data may be used to personalise
+adverts. You can agree, choose what to allow, or refuse. If you refuse, the revive advert still
+works, but it is not personalised. You can change your answer at any time from the game's Options
+menu (Privacy). Wherever you are, you can reset or delete your advertising ID in your phone's
+settings (on most phones: Settings &rarr; Privacy &rarr; Ads, or Settings &rarr; Google &rarr;
+Ads).</p>
+<p>Adverts are limited to content rated suitable for teenagers (Google's &ldquo;T&rdquo; rating or
+below).</p>
+
+<h3>8. The genuine-app check (Firebase App Check)</h3>
+<p>To protect the leaderboard and game data from fake submissions, the Android app asks Google Play
+to confirm that it is a genuine copy of the game, installed from Google Play, on a genuine device.
+This uses Google's Play Integrity service, through Firebase App Check. Google Play checks the app's
+name, version and signature and the integrity of the device, and returns a short-lived token that
+the game attaches to its connections to Firebase. The token says only that the check passed. It
+does not identify you or your device, and App Check does not keep the information used to make
+it.</p>
+
 <h2>What the game does not collect</h2>
 <ul>
   <li>No sign-in, username or password. The anonymous player ID above is created automatically and
@@ -125,15 +172,19 @@ message.</p>
   <li>No real name, email address, phone number, or postal address.</li>
   <li>No location or GPS data.</li>
   <li>No access to your contacts, photos, files, camera or microphone.</li>
-  <li>No advertising identifier. The game contains no advertising SDK and shows no ads.</li>
-  <li>No third-party analytics or tracking SDK, and no tracking of you across other apps or websites.</li>
+  <li>The game itself never reads or stores your advertising ID. Only Google's advertising
+    software in the Android app uses it, as described in section 7.</li>
+  <li>No analytics SDK. The game does not track you across other apps or websites. Google's
+    advertising software may use your advertising ID to personalise adverts, which you can refuse
+    or turn off (section 7).</li>
   <li>No payment information. The game is free and has no in-app purchases.</li>
 </ul>
 
 <h2>Data stored only on your device</h2>
 <p>Your save data — unlocked towers, your nickname, settings, tutorial progress and your local best
 score — is kept in your device's local storage and is not uploaded, except where described above.
-The key for your anonymous player ID is kept there too. Uninstalling the app, or clearing the site
+The key for your anonymous player ID is kept there too, as are the records of any runs that could
+not be sent because the device was offline, until the game next goes online. Uninstalling the app, or clearing the site
 data in your browser, erases all of it permanently. There is no cloud save and no way to recover
 it.</p>
 
@@ -143,7 +194,8 @@ Google Firebase Realtime Database hosted in the <code>europe-west1</code> region
 anonymous player ID is managed by Google Firebase Authentication. Google acts as the data processor
 for both and handles the data under
 <a href="https://firebase.google.com/support/privacy" rel="noopener">Google's Firebase privacy
-terms</a>. The data is not sold, and is not shared with anyone else.</p>
+terms</a>. This data is not sold, and is not shared with anyone else. (What Google's advertising
+software collects in the Android app goes directly to Google; see section 7.)</p>
 <p>Like any online service, Google's servers see your device's IP address and browser/OS
 identification string when the game connects to them. Under Google's terms, Firebase keeps these
 in its own logs for a limited time (a few days for the database, a few weeks for Authentication,
@@ -162,18 +214,19 @@ feedback and anonymous player ID will be deleted.</p>
 <p>Because the game holds nothing that identifies you, the only way to find your data is by your
 in-game nickname — so please include it. You can see your current nickname on the game's home
 screen. If you have rerolled it, mention the previous ones you remember.</p>
-<p>You can also stop any further data being sent at any time by playing with the device offline, or
-by uninstalling the game.</p>
+<p>You can also stop any further data being sent at any time by uninstalling the game. Playing
+offline only delays it: the records of runs played offline are sent the next time the game goes
+online.</p>
 
 <h2>Children</h2>
 <p>The game is not directed at children under 13, and does not knowingly collect information from
-them. It shows no advertising and offers no purchases. If you believe a child has sent feedback
+them. Its only advert is the optional revive advert, limited to content suitable for teenagers,
+and it offers no purchases. If you believe a child has sent feedback
 containing personal information, contact the address below and it will be deleted.</p>
 
 <h2>Changes to this policy</h2>
-<p>If the game starts collecting something new — for example if optional rewarded adverts are added
-in a future version — this policy will be updated before that version is released, and the date at
-the top of this page will change.</p>
+<p>If the game starts collecting something new, this policy will be updated before that version is
+released, and the date at the top of this page will change.</p>
 
 <h2>Contact</h2>
 <p>Questions, or a deletion request: <a href="mailto:conjodgames@gmail.com">conjodgames@gmail.com</a></p>
